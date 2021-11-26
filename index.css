@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.header-for-navbar {
+    position: sticky;
+    background-color: white;
+}
+
+.navbar-mobile {
+    padding: 1em 7%;
+    background-color: white;
+}
+
+.brandwrap img {
+    width: 150px;
+}
+
+.hero {
+    padding: 1.5em 7%;
+    padding-bottom: 0;
+}
+
+.main-heading {
+    font-size: 22px;
+    color: #370244;
+    padding-right: 20%;
+}
+
+.hero {
+    background: url(images/whitevector.svg);
+    background-size: cover;
+    background-position: 0px -60px;
+    background-color: #3A0248;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-text {
+    padding-top: 2em;
+    padding-right: 30%;
+    font-size: 12px;
+    color: #370244;
+    font-weight: 400;
+}
+
+.cta-btn {
+    background-color: #FBB159;
+    text-decoration: none;
+    color: #370244;
+    display: block;
+    width: max-content;
+    padding: .8em 1.4em;
+    border-radius: 2em;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.dog-img-container {
+    width: 100%;
+}
+
+.dog-mobile {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    right: -4px;
+}
+
+.usp {
+    padding: 2em 7%;
+}
+
+.sub-heading {
+    font-size: 18px;
+    color: #370244;
+    text-align: center;
+}
+
+.unpacked-food {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.bowl-img {
+    width: 200px;
+}
