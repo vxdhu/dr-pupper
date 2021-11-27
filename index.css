@@ -432,6 +432,32 @@ video {
     border-color: grey;
 }
 
+.callback {
+    padding: 2em 7%;
+    background-color: #3A0248;
+    padding-bottom: 4em;
+    position: relative;
+}
+
+.cb-text {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    width: 80%;
+}
+
+.cta-btn.footer {
+    padding: .5em 3em;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.footer-dog {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 @media(min-width:1024px) {
     .navbar-mobile {
         display: none;
@@ -458,7 +484,7 @@ video {
         height: auto;
         min-height: 50vh;
         background: url(images/desk-vector.svg);
-        background-color: #370244;
+        background-color: #3A0248;
         background-size: cover;
         background-position: bottom right;
         background-repeat: no-repeat;
@@ -532,7 +558,7 @@ video {
     .meal-plans {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 3em 5%;
+        padding: 4em 5%;
     }
     .meal-plans .border-container {
         border: none;
@@ -577,7 +603,7 @@ video {
         margin-bottom: 2em;
     }
     .testimonials {
-        padding: 3em 10%;
+        padding: 3em 5%;
         display: grid;
         grid-template-columns: 30% 70%;
         place-items: center;
@@ -586,10 +612,58 @@ video {
         border-left: 6px dashed #FBB159;
     }
     .testimonials .main-heading {
-        padding-right: 2em;
+        padding-right: 1.5em;
         text-align: right;
+        font-size: 32px;
     }
     .testimony-card {
         display: flex;
+    }
+    .upper-card {
+        border-radius: 0;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        padding: 2em 5%;
+        min-width: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .upper-card img {
+        align-self: center;
+    }
+    .lower-card {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1em;
+        padding: 2em 5%;
+        text-align: left;
+    }
+    .upper-card h4 {
+        font-size: 22px;
+    }
+    .lower-card .customer-name {
+        font-size: 18px !important;
+        padding: 0;
+    }
+    .lower-card p {
+        font-size: 16px;
+    }
+    .callback {
+        padding: 4em 10%;
+        background-color: #3A0248;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-dog {
+        display: none;
+    }
+    .cb-text {
+        font-size: 26px;
+        width: 60%;
+    }
+    .cta-btn.footer {
+        font-size: 31px;
+        padding: .5em 2.5em;
     }
 }
