@@ -649,7 +649,7 @@ video {
         font-size: 16px;
     }
     .callback {
-        padding: 4em 10%;
+        padding: 4em 5%;
         background-color: #3A0248;
         display: flex;
         align-items: center;
