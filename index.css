@@ -458,6 +458,16 @@ video {
     right: 0;
 }
 
+.swiper {
+    width: 70%;
+    height: 100%;
+}
+
+.testimonials .border-container {
+    border: none;
+    padding: 0;
+}
+
 @media(min-width:1024px) {
     .navbar-mobile {
         display: none;
@@ -608,9 +618,6 @@ video {
         grid-template-columns: 30% 70%;
         place-items: center;
     }
-    .testimonials-container {
-        border-left: 6px dashed #FBB159;
-    }
     .testimonials .main-heading {
         padding-right: 1.5em;
         text-align: right;
@@ -618,6 +625,7 @@ video {
     }
     .testimony-card {
         display: flex;
+        margin-bottom: 2em;
     }
     .upper-card {
         border-radius: 0;
@@ -665,5 +673,17 @@ video {
     .cta-btn.footer {
         font-size: 31px;
         padding: .5em 2.5em;
+    }
+    .swiper {
+        width: 80%;
+        height: auto;
+    }
+    .testimonials .border-container {
+        border: none;
+        border-right: 6px dashed #FBB159;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0;
     }
 }
