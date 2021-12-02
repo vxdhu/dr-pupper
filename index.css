@@ -597,6 +597,26 @@ video {
     }
 }
 
-
+@media(min-width:1024px) {
+    body {
+        background-position: -100px -320px;
+    }
+    .navbar-desktop .brandwrap img {
+        width: 210px;
+    }
+    .hero {
+        padding-top: 5em;
+    }
+    .hero .main-heading {
+        width: 50%;
+        font-size: 50px;
+    }
+    .hero .main-text {
+        width: 45%;
+        font-size: 24px;
+    }
+    .dog-mobile {
+        width: 60%;
+        bottom: -100px;
+    }
 }
-@media(max-width:361px) {}
