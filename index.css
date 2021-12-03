@@ -94,10 +94,24 @@ body {
     width: 120%;
     position: absolute;
     bottom: -60px;
-    right: -120px;
+    right: -145px;
 }
 
-.dog-desk {
+.boneimg {
+    position: absolute;
+    left: 30px;
+    bottom: 90px;
+}
+
+.pawsimg {
+    position: absolute;
+    right: 10px;
+    bottom: 300px;
+}
+
+.dog-desk,
+.pawsimgdesk,
+.boneimgdesk {
     display: none;
 }
 
@@ -277,6 +291,7 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
     row-gap: 1.5em;
+    position: relative;
 }
 
 .usp-maintext {
@@ -305,6 +320,30 @@ body {
     font-size: 11px;
     color: white;
     font-weight: 700;
+}
+
+.pawmoblhs {
+    position: absolute;
+    width: 27px;
+    left: 10px;
+    top: 30px;
+}
+
+.pawmobrhs {
+    position: absolute;
+    width: 27px;
+    right: 10px;
+    top: 30px;
+}
+
+.video .pawmoblhs {
+    top: 32px;
+    left: 50px;
+}
+
+.video .pawmobrhs {
+    top: 32px;
+    right: 50px;
 }
 
 .meal-plans {
@@ -602,6 +641,26 @@ video {
 }
 
 @media(min-width:1024px) {
+    .boneimg {
+        display: none;
+    }
+    .pawsimg {
+        display: none;
+    }
+    .boneimgdesk {
+        display: unset;
+        position: absolute;
+        bottom: 100px;
+        right: 750px;
+        z-index: 100;
+    }
+    .pawsimgdesk {
+        display: unset;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        z-index: 100;
+    }
     body {
         background: url(images/headerdesk.png);
         background-repeat: no-repeat;
@@ -814,7 +873,7 @@ video {
         transform: scaleX(-1);
     }
     .packed-food .comparison-text:nth-of-type(3) {
-        right: -60px;
+        right: 0px;
         top: 80px;
     }
     .packed-food .arrowfour {
@@ -850,6 +909,24 @@ video {
     .swiper {
         width: 100%;
     }
+    .pawmoblhs {
+        position: absolute;
+        left: 330px;
+        width: 55px !important;
+        top: 10px;
+    }
+    .pawmobrhs {
+        position: absolute;
+        right: 330px;
+        width: 55px !important;
+        top: 10px;
+    }
+    .video .pawmoblhs {
+        left: 400px;
+    }
+    .video .pawmobrhs {
+        right: 400px;
+    }
 }
 
 .swiper-pagination-bullet-active {
@@ -858,6 +935,57 @@ video {
 
 @media(max-width:376px) {
     .hero {
-        height: 85vh;
+        height: 90vh;
+    }
+    .boneimg {
+        position: absolute;
+        left: 40px;
+        bottom: 80px;
+    }
+    .pawsimg {
+        position: absolute;
+        right: 10px;
+        bottom: 250px;
+    }
+    .unpacked-food .comparison-text:nth-of-type(2) {
+        left: 136px;
+    }
+    .unpacked-food .arrowfive {
+        left: 140px;
+    }
+    .unpacked-food .comparison-text:nth-of-type(5) {
+        left: 90px;
+    }
+    .packed-food .comparison-text:nth-of-type(2) {
+        left: 110px;
+    }
+    .packed-food .arrowthree {
+        right: 70px;
+    }
+    .packed-food .comparison-text:nth-of-type(3) {
+        right: -10px;
+        top: 70px;
+    }
+    .packed-food .arrowfive {
+        left: 140px;
+    }
+    .packed-food .comparison-text:nth-of-type(5) {
+        left: 100px;
+    }
+}
+
+@media(max-width:361px) {
+    .hero {
+        height: 110vh;
+    }
+    .boneimg {
+        position: absolute;
+        left: 40px;
+        bottom: 80px;
+    }
+    .pawsimg {
+        position: absolute;
+        right: 10px;
+        bottom: 250px;
     }
 }
