@@ -789,15 +789,19 @@ video {
     /* packed food positioning */
     .packed-food .arrow {
         top: 120px;
-        left: 100px;
+        left: 325px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
     }
     .packed-food .comparison-text:nth-of-type(1) {
-        left: 10px;
-        top: 80px;
+        left: -30px;
+        top: 110px;
     }
     .packed-food .arrowtwo {
         top: 40px;
-        left: 260px;
+        left: 240px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
     }
     .packed-food .comparison-text:nth-of-type(2) {
         left: 170px;
@@ -805,23 +809,29 @@ video {
     }
     .packed-food .arrowthree {
         top: 120px;
-        right: 150px;
+        left: 130px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
     }
     .packed-food .comparison-text:nth-of-type(3) {
         right: -60px;
-        top: 110px;
+        top: 80px;
     }
     .packed-food .arrowfour {
         top: 320px;
-        right: 140px;
+        right: 330px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
     }
     .packed-food .comparison-text:nth-of-type(4) {
-        right: -40px;
-        bottom: 70px;
+        right: -10px;
+        bottom: 60px;
     }
     .packed-food .arrowfive {
         bottom: -5px;
         left: 240px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
     }
     .packed-food .comparison-text:nth-of-type(5) {
         right: 100px;
@@ -829,10 +839,12 @@ video {
     }
     .packed-food .arrowsix {
         bottom: 100px;
-        left: 120px;
+        left: 320px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
     }
     .packed-food .comparison-text:nth-of-type(6) {
-        left: 10px;
+        left: 0px;
         bottom: 60px;
     }
     .swiper {
@@ -841,5 +853,11 @@ video {
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #000 !important;
+    background-color: var(--primary-col) !important;
+}
+
+@media(max-width:376px) {
+    .hero {
+        height: 85vh;
+    }
 }
