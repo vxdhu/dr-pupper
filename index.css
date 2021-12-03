@@ -97,6 +97,10 @@ body {
     right: -120px;
 }
 
+.dog-desk {
+    display: none;
+}
+
 .features {
     padding: 2em 7%;
     background-color: white;
@@ -599,13 +603,26 @@ video {
 
 @media(min-width:1024px) {
     body {
-        background-position: -100px -330px;
+        background: url(images/headerdesk.png);
+        background-repeat: no-repeat;
+        background-color: var(--primary-col);
     }
     .navbar-desktop .brandwrap img {
         width: 210px;
     }
+    .dog-mobile {
+        display: none;
+    }
+    .dog-desk {
+        display: unset;
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
     .hero {
-        padding-top: 2.5em;
+        padding-top: 7em;
     }
     .hero .main-heading {
         width: 50%;
@@ -632,6 +649,21 @@ video {
         padding-top: 0;
         padding-bottom: .5em;
     }
+    .packed-food {
+        width: 80%;
+    }
+    .unpacked-food {
+        width: 80%;
+    }
+    .comparison-text {
+        font-size: 30px;
+    }
+    .bowl-img {
+        width: 334px;
+    }
+    .packet-img {
+        width: 298px;
+    }
     .usp {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -649,20 +681,157 @@ video {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .meal-plans img {
+    .meal-plans img:nth-of-type(1) {
         margin: 4em 0;
+        width: 400px;
     }
-    .foodpacketimg {
-        width: 20% !important;
-        margin: 2em 0 !important;
+    .meal-plans .foodpacketimg {
+        width: 205px !important;
+        margin: 1em 0 !important;
     }
     .border-container-four {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        margin: 2em 0;
     }
     .video-subtext {
         font-size: 25px;
+    }
+    .video .main-heading {
+        font-size: 48px;
+    }
+    video {
+        width: 549px;
+        height: 395px;
+        margin: 0;
+    }
+    .testimonials img {
+        width: 115px;
+        height: 115px;
+    }
+    .upper-card h4 {
+        font-size: 20px;
+    }
+    .customer-name {
+        font-size: 17px !important;
+    }
+    .lower-card p {
+        font-size: 15px;
+    }
+    .callback {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .cta-btn.footer {
+        display: inline-block;
+        margin: 2em 0;
+        margin-top: 3em;
+    }
+    .cb-text {
+        font-size: 25px;
+        width: 55%;
+        padding-top: 3em;
+    }
+    .cta-btn.footer:nth-of-type(2) {
+        margin-left: 5em;
+    }
+    .footer-dog {
+        width: 220px;
+    }
+    /* Image Positioning */
+    .unpacked-food .arrow {
+        top: 120px;
+        left: 100px;
+    }
+    .unpacked-food .comparison-text:nth-of-type(1) {
+        left: 10px;
+        top: 80px;
+    }
+    .unpacked-food .arrowtwo {
+        top: 40px;
+        left: 260px;
+    }
+    .unpacked-food .comparison-text:nth-of-type(2) {
+        left: 220px;
+        top: 0px;
+    }
+    .unpacked-food .arrowthree {
+        top: 120px;
+        right: 120px;
+    }
+    .unpacked-food .comparison-text:nth-of-type(3) {
+        right: 10px;
+        top: 100px;
+    }
+    .unpacked-food .arrowfour {
+        top: 320px;
+        right: 100px;
+    }
+    .unpacked-food .comparison-text:nth-of-type(4) {
+        right: 10px;
+        bottom: 100px;
+    }
+    .unpacked-food .arrowfive {
+        bottom: 10px;
+        left: 240px;
+    }
+    .unpacked-food .comparison-text:nth-of-type(5) {
+        right: 100px;
+        bottom: -30px;
+    }
+    .unpacked-food .arrowsix {
+        bottom: 100px;
+        left: 80px;
+    }
+    .unpacked-food .comparison-text:nth-of-type(6) {
+        left: 10px;
+        bottom: 60px;
+    }
+    /* packed food positioning */
+    .packed-food .arrow {
+        top: 120px;
+        left: 100px;
+    }
+    .packed-food .comparison-text:nth-of-type(1) {
+        left: 10px;
+        top: 80px;
+    }
+    .packed-food .arrowtwo {
+        top: 40px;
+        left: 260px;
+    }
+    .packed-food .comparison-text:nth-of-type(2) {
+        left: 170px;
+        top: 0px;
+    }
+    .packed-food .arrowthree {
+        top: 120px;
+        right: 150px;
+    }
+    .packed-food .comparison-text:nth-of-type(3) {
+        right: -60px;
+        top: 110px;
+    }
+    .packed-food .arrowfour {
+        top: 320px;
+        right: 140px;
+    }
+    .packed-food .comparison-text:nth-of-type(4) {
+        right: -40px;
+        bottom: 70px;
+    }
+    .packed-food .arrowfive {
+        bottom: -5px;
+        left: 240px;
+    }
+    .packed-food .comparison-text:nth-of-type(5) {
+        right: 100px;
+        bottom: -50px;
+    }
+    .packed-food .arrowsix {
+        bottom: 100px;
+        left: 120px;
+    }
+    .packed-food .comparison-text:nth-of-type(6) {
+        left: 10px;
+        bottom: 60px;
     }
 }
