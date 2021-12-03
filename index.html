@@ -30,7 +30,8 @@
     <main>
         <section class="hero">
             <h1 class="main-heading">Add up to <span style="color:#FBB159">3 YEARS</span> to your Dog's Life</h1>
-            <p class="main-text">When it comes to your child, a healthy diet is obviously your first choice over that fried burger. So, what about making a choice for your pet? where we provide the nutrients which could <span style="color: 
+            <p class="main-text">When it comes to your child, a healthy diet is obviously your first choice over that fried burger. So, what about making a choice for your pet? where we provide the nutrients which could
+                <span style="color: 
                 #FBB159;">Increase 3 Years of life-span</span> of your furry friend.
             </p>
             <a class="cta-btn" href="#">Get your free sample</a>
@@ -98,7 +99,8 @@
         </section>
 
         <section class="usp">
-            <p class="usp-maintext"> <span style="color: #FBB159; font-size: 30px;  font-weight: 700;">Why choose us</span> <br> from end number of pet food companies?
+            <p class="usp-maintext"> <span style="color: #FBB159; font-size: 30px;  font-weight: 700;">Why choose
+                    us</span> <br> from end number of pet food companies?
 
             </p>
 
@@ -140,7 +142,8 @@
                 </p>
 
                 <img class="foodpacketimg" src="images/foodpacket.png" alt="food-bowl">
-                <p class="meal-subtext">Just mix it with your regular pet food, and voilà, healthy meal is now even more healthier.</p>
+                <p class="meal-subtext">Just mix it with your regular pet food, and voilà, healthy meal is now even more healthier.
+                </p>
             </div>
 
         </section>
@@ -234,12 +237,23 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper('.swiper', {
+
+            slidesPerView: 1,
+            spaceBetween: 40,
+            loop: true,
             pagination: {
                 el: ".swiper-pagination",
-                dynamicBullets: true,
-
+                clickable: true,
             },
+            // Responsive breakpoints
+            breakpoints: {
+
+                999: {
+                    slidesPerView: 3,
+                    spaceBetweenSlides: 50
+                }
+            }
         });
     </script>
 

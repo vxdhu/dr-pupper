@@ -509,7 +509,7 @@ video {
 }
 
 .swiper {
-    width: 70%;
+    width: 80%;
     height: 100%;
 }
 
@@ -833,5 +833,8 @@ video {
     .packed-food .comparison-text:nth-of-type(6) {
         left: 10px;
         bottom: 60px;
+    }
+    .swiper {
+        width: 100%;
     }
 }
