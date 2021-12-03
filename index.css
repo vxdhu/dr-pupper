@@ -422,11 +422,13 @@ body {
     align-items: center;
 }
 
-video {
+iframe {
     width: 300px;
     height: 216px;
-    margin-top: 1.5em;
+    margin-top: 1.5em !important;
     border-radius: 1.5em;
+    outline: none;
+    border: none;
 }
 
 .testimonials {
@@ -628,7 +630,7 @@ video {
     .video .main-heading {
         font-size: 24px;
     }
-    video {
+    iframe {
         width: 400px;
         height: 300px;
     }
@@ -759,7 +761,7 @@ video {
     .video .main-heading {
         font-size: 48px;
     }
-    video {
+    iframe {
         width: 549px;
         height: 395px;
         margin: 0;
