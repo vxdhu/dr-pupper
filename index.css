@@ -15,6 +15,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: -40px -30px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .header-for-navbar {
@@ -38,6 +40,7 @@ body {
 
 .hero {
     padding: 1.5em 10%;
+    padding-bottom: 18em;
 }
 
 .main-heading {
@@ -51,7 +54,6 @@ body {
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-    height: 100vh;
 }
 
 .main-text {
@@ -107,6 +109,7 @@ body {
     position: absolute;
     right: 10px;
     bottom: 300px;
+    z-index: -1;
 }
 
 .dog-desk,
@@ -579,6 +582,7 @@ iframe {
     .hero {
         padding-top: 3em;
         height: 80vh;
+        padding-bottom: 2em;
     }
     .dog-mobile {
         width: 70%;
@@ -685,7 +689,7 @@ iframe {
         z-index: 1;
     }
     .hero {
-        padding-top: 4em;
+        padding-top: 3em;
     }
     .hero .main-heading {
         width: 50%;
@@ -937,9 +941,6 @@ iframe {
 }
 
 @media(max-width:376px) {
-    .hero {
-        height: 90vh;
-    }
     .boneimg {
         position: absolute;
         left: 40px;
@@ -978,9 +979,6 @@ iframe {
 }
 
 @media(max-width:361px) {
-    .hero {
-        height: 110vh;
-    }
     .boneimg {
         position: absolute;
         left: 40px;
