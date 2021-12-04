@@ -90,6 +90,7 @@ body {
 
 .dog-img-container {
     width: 100%;
+    z-index: -1;
 }
 
 .dog-mobile {
@@ -97,6 +98,7 @@ body {
     position: absolute;
     bottom: -60px;
     right: -145px;
+    z-index: -1;
 }
 
 .boneimg {
